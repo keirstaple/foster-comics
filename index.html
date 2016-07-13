@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <base href=".">
+    <title>Angular2 Practice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./app/css/styles.css">
+
+
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/ng2-bootstrap/bundles/ng2-bootstrap.min.js"></script>
+    <script src="node_modules/ng2-page-scroll/bundles/ng2-page-scroll.min.js"></script>
+    <script src="node_modules/d3/build/d3.min.js"></script>
+
+
+    <!-- Configure SystemJS -->
+<script src="systemjs.config.js"></script>
+    
+<script>
+    System.import('app').catch(function(err){ console.error(err); });
+</script>
+</head>
+
+<body>
+  <my-app>Loading App...</my-app>
+</body>
+</html>
