@@ -5,7 +5,7 @@
 (function(global) {
   // map tells the System loader where to look for things
   //added 'moment': 'node_modules/moment/moment.js' from the System.config() that was initially in index.html
-  
+
   var baseUrl = '/app';
   var map = {
     'app':                        'app', // 'dist',
@@ -13,9 +13,7 @@
     'angular2-in-memory-web-api': 'node_modules/angular2-in-memory-web-api',
     'rxjs':                       'node_modules/rxjs',
     'moment':                     'node_modules/moment/moment.js',
-    'ng2-bootstrap':              'node_modules/ng2-bootstrap',
-    'ng2-page-scroll':            'node_modules/ng2-page-scroll',
-    'd3':                         'node_modules/d3'
+    'ng2-bootstrap':              'node_modules/ng2-bootstrap'
   };
 
   // packages tells the System loader how to load when no filename and/or no extension
@@ -26,10 +24,9 @@
     'rxjs':                       { defaultExtension: 'js' },
     'angular2-in-memory-web-api': { main: 'index.js', defaultExtension: 'js' },
     '@angular/router':            { main: 'index.js', defaultExtension: 'js' },
-    'ng2-bootstrap':              { main: 'ng2-bootstrap.js', defaultExtension: 'js'},
-    'ng2-page-scroll':            { main: 'ng2-page-scroll.js', defaultExtension: 'js'},
-    'd3':                         { main: 'build/d3.js', defaultExtenstion: 'js' }
+    'ng2-bootstrap':              { main: 'ng2-bootstrap.js', defaultExtension: 'js'}
   };
+  
   var ngPackageNames = [
     'common',
     'compiler',
