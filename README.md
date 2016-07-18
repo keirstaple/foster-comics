@@ -8,6 +8,8 @@
 
 _This webpage was built to display a comic series called Slice by my good friend Foster Woodburn. As of now, the site will be a place to display his creative talents and to learn more about his characters. However, we hope to incorporate an eCommerce aspect to the site using a third party javascript library (perhaps Shopify, payPal or Stripe)._
 
+_**Live version coming soon!**_
+
 ## Setup/Installation Requirements
 
 * _Fork this project from https://github.com/keirstaple/foster-comics.git __
