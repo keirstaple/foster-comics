@@ -12,7 +12,7 @@ _**Live version coming soon!**_
 
 ## Setup/Installation Requirements
 
-* _Fork this project from https://github.com/keirstaple/foster-comics.git __
+* _Fork this project from https://github.com/keirstaple/foster-comics.git _
 * _Clone this project to your local drive_
 * _Create a new branch for your personal edits and viewing_
 * _Run $npm install_

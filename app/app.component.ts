@@ -20,5 +20,4 @@ import { ShoppingCartComponent } from './shopping-cart.component';
   `,
   directives: [LandingPageComponent, ROUTER_DIRECTIVES]
 })
-export class AppComponent {
-}
+export class AppComponent { }
