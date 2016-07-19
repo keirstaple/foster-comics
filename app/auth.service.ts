@@ -15,4 +15,15 @@ export class Auth {
     callbackURL: 'http://localhost:3000/',
   });
 
+  public login(username, password){
+    this.auth0.login({
+      connection: 'Username-Password-Authentication',
+      responseType: 'token',
+      email: username,
+      password: password,
+    }, function(err){
+      if (err) alert('something went wrong: ' + err.message);
+    });
+  };
+
 }
