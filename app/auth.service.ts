@@ -25,6 +25,17 @@ export class Auth {
       alert('error: ' + result.error);
     }
   }
+  
+  public signUp(username, password) {
+    this.auth0.signup({
+      connection: 'Username-Password-Authentication',
+      responseType: 'token',
+      email: username,
+      password: password,
+    }, function(err){
+      if (err) alert('something went wrong: ' + err.message);
+    });
+  };
 
   public login(username, password){
     this.auth0.login({
@@ -36,6 +47,7 @@ export class Auth {
       if (err) alert('something went wrong: ' + err.message);
     });
   };
+
 
   public authenticated() {
     // Check if there's an unexpired JWT
