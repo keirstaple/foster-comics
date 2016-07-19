@@ -15,6 +15,17 @@ export class Auth {
     callbackURL: 'http://localhost:3000/',
   });
 
+  constructor(private router: Router) {
+    var result = this.auth0.parseHash(window.location.hash);
+
+    if (result && result.idToken) {
+      localStorage.setItem('id_token', result.idToken);
+      this.router.navigate(['/landing-page']);
+    } else if (result && result.error) {
+      alert('error: ' + result.error);
+    }
+  }
+
   public login(username, password){
     this.auth0.login({
       connection: 'Username-Password-Authentication',
