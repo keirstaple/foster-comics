@@ -5,7 +5,7 @@ import { CharacterBiosComponent } from './character-bios.component';
 import { AboutAuthorComponent } from './about-author.component';
 import { StoreComponent } from './store.component';
 import { ShoppingCartComponent } from './shopping-cart.component';
-// import { Auth } from './auth.service';
+import { Auth } from './auth.service';
 
 @Component({
   selector: 'my-app',
@@ -16,13 +16,14 @@ import { ShoppingCartComponent } from './shopping-cart.component';
       <a [routerLink]="['about-author']">About Author</a>
       <a [routerLink]="['store']">Store</a>
       <a [routerLink]="['shopping-cart']">Shopping Cart</a>
+      <button [routerLink]="['login']" *ngIf="!auth.authenticated()">Log In</button>
     </nav>
     <router-outlet></router-outlet>
   `,
-  directives: [LandingPageComponent, ROUTER_DIRECTIVES],
-  providers: [ ]
+  providers: [ Auth ],
+  directives: [LandingPageComponent, ROUTER_DIRECTIVES]
 })
 
 export class AppComponent {
-
+  constructor(private auth: Auth) {}
 }

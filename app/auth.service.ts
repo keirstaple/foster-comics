@@ -37,4 +37,10 @@ export class Auth {
     });
   };
 
+  public authenticated() {
+    // Check if there's an unexpired JWT
+    // It searches for an item in localStorage with key == 'id_token'
+    return tokenNotExpired();
+  };
+
 }
