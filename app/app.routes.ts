@@ -5,6 +5,7 @@ import { AboutAuthorComponent } from './about-author.component';
 import { StoreComponent } from './store.component';
 import { ShoppingCartComponent } from './shopping-cart.component';
 import { LoginComponent } from './login.component';
+import { SignupComponent } from './signup.component';
 
 //the component that's initially loaded by the path '' can't be AppComponent, otherwise everything will load twice. It must be something like Home (or LandingPage)
 export const routes: RouterConfig = [
@@ -14,6 +15,7 @@ export const routes: RouterConfig = [
   { path: 'store', component: StoreComponent },
   { path: 'shopping-cart', component: ShoppingCartComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'signup', component: SignupComponent },
   { path: '**', redirectTo: '' }
 ];
 

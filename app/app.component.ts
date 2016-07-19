@@ -17,6 +17,7 @@ import { Auth } from './auth.service';
       <a [routerLink]="['store']">Store</a>
       <a [routerLink]="['shopping-cart']">Shopping Cart</a>
       <button class="btn btn-primary btn-margin" [routerLink]="['login']" *ngIf="!auth.authenticated()">Log In</button>
+      <button class="btn btn-primary btn-margin" [routerLink]="['signup']" *ngIf="!auth.authenticated()">Sign Up</button>
     </nav>
     <router-outlet></router-outlet>
   `,
