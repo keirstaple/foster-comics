@@ -25,7 +25,7 @@ export class Auth {
       alert('error: ' + result.error);
     }
   }
-  
+
   public signUp(username, password) {
     this.auth0.signup({
       connection: 'Username-Password-Authentication',
@@ -53,6 +53,10 @@ export class Auth {
     // Check if there's an unexpired JWT
     // It searches for an item in localStorage with key == 'id_token'
     return tokenNotExpired();
+  };
+
+  public logout() {
+    localStorage.removeItem('id_token');
   };
 
 }
