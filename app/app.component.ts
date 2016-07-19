@@ -5,6 +5,7 @@ import { CharacterBiosComponent } from './character-bios.component';
 import { AboutAuthorComponent } from './about-author.component';
 import { StoreComponent } from './store.component';
 import { ShoppingCartComponent } from './shopping-cart.component';
+// import { Auth } from './auth.service';
 
 @Component({
   selector: 'my-app',
@@ -18,6 +19,10 @@ import { ShoppingCartComponent } from './shopping-cart.component';
     </nav>
     <router-outlet></router-outlet>
   `,
-  directives: [LandingPageComponent, ROUTER_DIRECTIVES]
+  directives: [LandingPageComponent, ROUTER_DIRECTIVES],
+  providers: [ ]
 })
-export class AppComponent { }
+
+export class AppComponent {
+
+}
